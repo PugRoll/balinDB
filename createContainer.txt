@@ -4,3 +4,7 @@ docker build -t balin-db .
 
 Run the container
 docker run -it balin-db
+
+
+docker-compose command
+docker-compse -f balindb.yaml up -d

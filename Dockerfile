@@ -16,6 +16,10 @@ COPY balinAdd.tar.gz /app/balinAdd.tar.gz
 
 
 COPY init-db.sh /app/init-db.sh
+COPY init.sql /app/init.sql
+
+
+
 COPY convertToBlob.py /app/convertToBlob.py
 RUN chmod +x /app/init-db.sh
 

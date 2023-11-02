@@ -1,0 +1,9 @@
+version: '3'
+services:
+  balin-db:
+    image: balin-db:latest
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: Balin-Database
