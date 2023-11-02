@@ -1,0 +1,12 @@
+
+
+Is an API needed to serve the files?
+    1. Can it be put into a docker container?
+    2. XML or JSON
+        a. jsoncpp would be needed to parse json. 
+    3. Wrapping the operations
+
+
+Look into kubernetes cluster
+
+

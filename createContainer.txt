@@ -1,0 +1,6 @@
+Create the image:
+docker build -t balin-db .
+
+
+Run the container
+docker run -it balin-db
