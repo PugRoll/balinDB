@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #create database
-sqlite3 /app/d.db ""
+sqlite3 /app/d.db -ex ""
 
 #Run database creation script
 sqlite3 /app/d.db < /app/init.sql
@@ -20,9 +20,13 @@ sqlite3 /app/d.db < /app/init.sql
 #echo ".exit"
 
 #Execute python script to insert data into database
-python /app/convertToBlob.py
+python /app/convertToBlob.py&
 
+echo "HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII"
 
+#pip install -r /app/requirements.txt
+
+python /app/app.py
 
 
 

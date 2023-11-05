@@ -8,3 +8,8 @@ docker run -it balin-db
 
 docker-compose command
 docker-compse -f balindb.yaml up -d
+
+
+
+!!!
+Make sure to run convertToUnixFileFormat.sh before creating the container
