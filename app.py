@@ -40,7 +40,7 @@ def get_file(id):
         file_data, file_name = cursor.fetchone()
 
         #serve the file via Flask's send_file
-        response = send_file(io.BytesIO(file_data), mimetype='application/tar-x':)
+        response = send_file(io.BytesIO(file_data), mimetype='application/tar-x')
 
         #Set content-disposition header to specify the file_name
         response.headers['Content-Disposition'] = f'attachment; filename="{file_name}"'
