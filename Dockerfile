@@ -15,6 +15,7 @@ WORKDIR /app
 
 #Copy .tar.gz file into the container
 COPY balinAdd.tar.gz /app/balinAdd.tar.gz
+COPY balinSubtract.tar.gz /app/balinSubtract.tar.gz
 
 
 COPY init-db.sh /app/init-db.sh
